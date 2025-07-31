@@ -124,36 +124,47 @@
 
 <!-- JavaScript -->
 <script>
-  document.getElementById('formViaje').addEventListener('submit', function (e) {
-    e.preventDefault();
-
+  function enviarWhatsapp() {
     const cupo = document.querySelector('input[name="cupo"]:checked')?.value || '';
-    const salida = document.getElementById('salida').value.trim();
-    const fecha = document.getElementById('fecha').value;
-    const hora = document.getElementById('hora').value;
-    const destino = document.getElementById('destino').value.trim();
-    const itinerario = document.getElementById('itinerario').value.trim();
-    const fechaRegreso = document.getElementById('fechaRegreso').value;
-    const horaRegreso = document.getElementById('horaRegreso').value;
-    const lugarRegreso = document.getElementById('lugarRegreso').value.trim();
-    const comentarios = document.getElementById('comentarios').value.trim();
+    const salida = document.getElementById("salida").value.trim();
+    const fechaSalida = document.getElementById("fecha").value;
+    const horaSalida = document.getElementById("hora").value;
+    const destino = document.getElementById("destino").value.trim();
+    const itinerario = document.getElementById("itinerario").value.trim();
+    const fechaRegreso = document.getElementById("fechaRegreso").value;
+    const horaRegreso = document.getElementById("horaRegreso").value;
+    const lugarRegreso = document.getElementById("lugarRegreso").value.trim();
+    const comentarios = document.getElementById("comentarios").value.trim();
 
-    let mensaje = `*Solicitud de Camioneta* `;
-    mensaje += `*Tamaño o cupo:* ${cupo}%0A`;
-    mensaje += `*Lugar de salida:* ${salida}%0A`;
-    mensaje += `*Fecha y hora:* ${fecha} ${hora}%0A`;
-    mensaje += `*Lugar de destino:* ${destino}%0A`;
-    if (itinerario) mensaje += `*Itinerario:* ${itinerario}%0A`;
-    if (fechaRegreso) mensaje += `*Fecha regreso:* ${fechaRegreso}%0A`;
-    if (horaRegreso) mensaje += `*Hora regreso:* ${horaRegreso}%0A`;
-    if (lugarRegreso) mensaje += `*Lugar regreso:* ${lugarRegreso}%0A`;
-    if (comentarios) mensaje += `*Comentarios:* ${comentarios}%0A`;
+    // Validación básica
+    if (!cupo || !salida || !fechaSalida || !horaSalida || !destino) {
+      alert("Por favor, completa todos los campos obligatorios.");
+      return;
+    }
 
-    const telefono = '5215650053083';
+    // Construir mensaje
+    const mensaje = `🚐 *Solicitud de Camioneta* 🚐
+- *Tamaño o cupo:* ${cupo}
+- *Lugar de salida:* ${salida}
+- *Fecha y hora de salida:* ${fechaSalida} ${horaSalida}
+- *Destino:* ${destino}
+- *Itinerario:* ${itinerario || 'N/A'}
+- *Fecha y hora de regreso:* ${fechaRegreso || 'N/A'} ${horaRegreso || 'N/A'}
+- *Lugar de regreso:* ${lugarRegreso || 'N/A'}
+- *Comentarios:* ${comentarios || 'N/A'}`;
+
+    const telefono = "5215650053083";
     const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
-    window.open(url, '_blank');
+    window.open(url, "_blank");
+  }
+
+  // Opcional: conectarlo a un formulario
+  document.getElementById('formViaje')?.addEventListener('submit', function (e) {
+    e.preventDefault();
+    enviarWhatsapp();
   });
 </script>
+
 
 
         </div>
