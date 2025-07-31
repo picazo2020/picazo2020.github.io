@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Excursiones | ViajaleMX</title>
+  <link rel="icon" type="image/png" href="IconoViajale.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link rel="stylesheet" href="stily.css">
+
+  <style>
+    .hero-excurisones {
+      background: url('reservas-bg.jpg') center/cover no-repeat;
+      color: white;
+      padding: 120px 15px 80px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+      text-align: center;
+      border-radius: 12px;
+      margin-bottom: 60px;
+    }
+    .hero-excurisones h1 {
+      font-weight: 700;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      margin-bottom: 0.3rem;
+    }
+    .hero-excurisones p {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    footer {
+      background-color: #212529;
+      color: #fff;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+
+<body>
+    
+<header class="p-3 text-bg-dark">
+    <div class="container">
+         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> 
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"> 
+                <img src="Log Viajale.png" class="bi me-2" width="200" height="50" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap"></use></img> </a> 
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> 
+                    <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li> 
+                    <li><a href="rentacamioneta.html" class="nav-link px-2 text-white">Renta de Camioneta</a></li> 
+                    <li><a href="excursiones.html" class="nav-link px-2 text-white">Excursiones</a></li> 
+                    <li><a href="Reservar.html" class="nav-link px-2 text-white">Reservas</a></li> <li>
+                <a href="#" class="nav-link px-2 text-white">Ayuda</a></li> 
+                    </ul>  
+                 </div> </div> </header>    
+    </header>
+    <!-- IMAGEN DE BIENVENIDA AL INICIO -->
+    <div class="container text-center my-4 fade-in">
+      <img src="excursiones.png" alt="Bienvenido a Viajale" class="img-fluid rounded" style="max-height: 350px;">
+    </div>
+  <!-- HERO -->
+      <section class="hero-excursiones text-center fade-in">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="display-4 fw-bold">Excursiones Grupales</h1>
+        <p class="lead mb-4">Vive experiencias inolvidables en cada destino con guías expertos y transporte cómodo.</p>
+        <p>Únete a nuestros grupos y descubre lugares emblemáticos, disfruta actividades exclusivas y crea recuerdos que durarán toda la vida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXCURSIONES DESTACADAS -->
+  <section id="destinos" class="py-5">
+    <div class="container fade-in">
+      <h2 class="text-center section-title mb-5">Destinos Populares</h2>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="teotihuacanjpg.jpg" class="card-img-top" alt="Excursión 1" />
+            <div class="card-body">
+              <h5 class="card-title">Teotihuacán</h5>
+              <p class="card-text">Descubre las majestuosas pirámides y sumérgete en la historia prehispánica.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="Tolantongo.png" class="card-img-top" alt="Excursión 2" />
+            <div class="card-body">
+              <h5 class="card-title">Grutas de Tolantongo</h5>
+              <p class="card-text">Relájate en aguas termales rodeadas de paisajes impresionantes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <img src="pe;al.png" class="card-img-top" alt="Excursión 3" />
+            <div class="card-body">
+              <h5 class="card-title">Peña de Bernal</h5>
+              <p class="card-text">Explora uno de los monolitos más grandes del mundo y su encantador pueblo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCLUYE -->
+  <section class="bg-light py-5 fade-in">
+    <div class="container text-center">
+      <h2 class="section-title mb-4">¿Qué incluye tu excursión?</h2>
+      <div class="row g-4">
+        <div class="col-md-3">
+          <i class="bi bi-bus-front fs-1 text-primary"></i>
+          <p class="fw-bold">Transporte Redondo</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-person-check fs-1 text-success"></i>
+          <p class="fw-bold">Guía de viaje</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-geo-alt fs-1 text-danger"></i>
+          <p class="fw-bold">Visitas programadas</p>
+        </div>
+        <div class="col-md-3">
+          <i class="bi bi-shield-check fs-1 text-warning"></i>
+          <p class="fw-bold">Seguro de viajero</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA WHATSAPP -->
+  <section class="py-5 text-center bg-dark text-white">
+    <div class="container">
+      <h2 class="mb-3">¿Listo para tu próxima aventura?</h2>
+      <a href="https://wa.me/5215650053083" target="_blank" class="btn btn-success btn-lg">
+        <i class="bi bi-whatsapp me-2"></i> Cotiza por WhatsApp
+      </a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="text-center">
+    <div class="container">
+      <p class="mb-1">© 2025 Viajale. Todos los derechos reservados.</p>
+      <small>Contacto: <a href="mailto:contacto@viajale.com" class="text-white">contacto@viajale.com</a> | Tel: +52 5650053083</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

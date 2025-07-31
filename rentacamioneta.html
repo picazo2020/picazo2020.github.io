@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Renta de Camioneta | Viajale</title>
+  <link rel="icon" type="image/png" href="IconoViajale.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+<link rel="stylesheet" href="stily.css">
+  <style>
+    body {
+      background-color: #f9fafb;
+      color: #343a40;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .hero-renta {
+      position: relative;
+      background-image: url('camioneta-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      padding: 120px 15px 80px;
+      border-radius: 12px;
+      color: #212529;
+      text-align: center;
+      margin-bottom: 0;
+      overflow: hidden;
+    }
+    .hero-renta::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(255,255,255,0.85);
+      border-radius: 12px;
+      z-index: 0;
+    }
+    .hero-renta > * {
+      position: relative;
+      z-index: 1;
+    }
+    .hero-renta h1 {
+      font-weight: 700;
+      font-size: 3.5rem;
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
+    }
+    .hero-renta p.lead {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.4;
+    }
+    .hero-renta p.info-extra {
+      font-size: 1.15rem;
+      font-weight: 400;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+      margin-bottom: 0;
+      color: #495057;
+    }
+    .section-title {
+      font-size: 2.75rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+      color: #212529;
+      text-align: center;
+    }
+    .info-icon {
+      font-size: 3.5rem;
+      color: #198754; /* verde bootstrap */
+      margin-bottom: 15px;
+      transition: color 0.3s ease;
+    }
+    .info-icon.text-warning {
+      color: #ffc107;
+    }
+    .info-icon.text-primary {
+      color: #0d6efd;
+    }
+    .info-item h5 {
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #212529;
+    }
+    .info-item p {
+      color: #6c757d;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    form {
+      max-width: 720px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    }
+    label.form-label {
+      font-weight: 600;
+      color: #495057;
+    }
+    .btn-success {
+      background-color: #198754;
+      border-color: #198754;
+      font-size: 1.25rem;
+      padding: 12px 30px;
+      border-radius: 50px;
+      transition: background-color 0.3s ease;
+    }
+    .btn-success:hover, .btn-success:focus {
+      background-color: #146c43;
+      border-color: #146c43;
+      box-shadow: 0 0 10px rgba(20,108,67,0.6);
+    }
+    footer {
+      background-color: #212529;
+      color: #adb5bd;
+      padding: 25px 0;
+      font-size: 0.9rem;
+      text-align: center;
+      margin-top: 60px;
+      user-select: none;
+    }
+    footer a {
+      color: #198754;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    .form-check-label {
+      cursor: pointer;
+      user-select: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+<header class="p-3 text-bg-dark">
+    <div class="container">
+         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> 
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"> 
+                <img src="Log Viajale.png" class="bi me-2" width="200" height="50" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap"></use></img> </a> 
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> 
+                    <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li> 
+                    <li><a href="rentacamioneta.html" class="nav-link px-2 text-white">Renta de Camioneta</a></li> 
+                    <li><a href="excursiones.html" class="nav-link px-2 text-white">Excursiones</a></li> 
+                    <li><a href="Reservar.html" class="nav-link px-2 text-white">Reservas</a></li> <li>
+                <a href="#" class="nav-link px-2 text-white">Ayuda</a></li> 
+                    </ul>  
+                 </div> </div> </header>
+
+
+      <div class="container text-center my-4">
+      <img src="Rentacamionetas.png" alt="Bienvenido a Viajale" class="img-fluid rounded fade-in" style="max-height: 350px;">
+    </div>
+  <!-- HERO -->
+    <section class="hero-excursiones text-center fade-in">
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="display-4 fw-bold">Renta de Camioneta</h1>
+        <p class="lead mb-4">Servicio ideal para eventos, excursiones y traslados grupales</p>
+        <p>En Viajale sabemos lo importante que es viajar con comodidad y seguridad. Por eso te ofrecemos camionetas espaciosas, limpias y con choferes profesionales que harán de tu viaje una experiencia agradable y sin preocupaciones.<br><br>
+        Ya sea para un evento familiar, una excursión con amigos o traslados corporativos, nuestras unidades están preparadas para cubrir tus necesidades con flexibilidad y puntualidad.<br><br>
+        Reserva con nosotros y disfruta de un servicio confiable, amable y pensado en tu comodidad. ¡Contáctanos hoy mismo para una cotización personalizada!</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO -->
+  <section class="py-5 fade-in fade-in">
+    <div class="container">
+      <h2 class="section-title">¿Por qué elegirnos?</h2>
+      <div class="row text-center g-4">
+        <div class="col-md-4 info-item">
+          <i class="bi bi-star-fill info-icon text-warning"></i>
+          <h5>Servicio Profesional</h5>
+          <p>Choferes capacitados y unidades seguras y limpias.</p>
+        </div>
+        <div class="col-md-4 info-item">
+          <i class="bi bi-clock-fill info-icon text-primary"></i>
+          <h5>Puntualidad Garantizada</h5>
+          <p>Cumplimos con los horarios acordados y rutas planeadas.</p>
+        </div>
+        <div class="col-md-4 info-item">
+          <i class="bi bi-people-fill info-icon text-success"></i>
+          <h5>Espacio y Comodidad</h5>
+          <p>Capacidad de hasta 20 pasajeros, ideal para grupos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section class="bg-light py-5 fade-in">
+    <div class="container">
+      <h2 class="section-title mb-4 text-center">Solicita una Cotización</h2>
+      <form id="rentaForm" novalidate>
+        <div class="row mb-4 justify-content-center">
+          <div class="col-md-6 d-flex align-items-center justify-content-center gap-4">
+            <label class="form-label fw-bold mb-0">Tamaño o Cupo:</label>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="cupo" id="cupo14" value="14 pasajeros" required />
+              <label class="form-check-label" for="cupo14">14 pasajeros</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="cupo" id="cupo20" value="20 pasajeros" />
+              <label class="form-check-label" for="cupo20">20 pasajeros</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <label for="salida" class="form-label">Lugar de salida o recolección</label>
+            <input type="text" class="form-control" id="salida" placeholder="Ejemplo: Ciudad de México" required />
+          </div>
+        </div>
+
+        <div class="row mb-4 g-3">
+          <div class="col-md-4">
+            <label for="fechaSalida" class="form-label">Fecha de salida</label>
+            <input type="date" class="form-control" id="fechaSalida" required />
+          </div>
+          <div class="col-md-4">
+            <label for="horaSalida" class="form-label">Hora</label>
+            <input type="time" class="form-control" id="horaSalida" required />
+          </div>
+          <div class="col-md-4">
+            <label for="destino" class="form-label">Lugar de destino</label>
+            <input type="text" class="form-control" id="destino" placeholder="Ejemplo: Playa del Carmen" required />
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="itinerario" class="form-label">Itinerario (opcional)</label>
+          <textarea class="form-control" id="itinerario" rows="3" placeholder="Especifica las paradas o detalles del viaje"></textarea>
+        </div>
+
+        <div class="row mb-4 g-3">
+          <div class="col-md-4">
+            <label for="fechaRegreso" class="form-label">Fecha de regreso</label>
+            <input type="date" class="form-control" id="fechaRegreso" />
+          </div>
+          <div class="col-md-4">
+            <label for="horaRegreso" class="form-label">Hora de regreso</label>
+            <input type="time" class="form-control" id="horaRegreso" />
+          </div>
+          <div class="col-md-4">
+            <label for="lugarRegreso" class="form-label">Lugar de regreso</label>
+            <input type="text" class="form-control" id="lugarRegreso" placeholder="Ejemplo: Ciudad de México" />
+          </div>
+        </div>
+
+        <div class="mb-4">
+          <label for="comentarios" class="form-label">Comentarios</label>
+          <textarea class="form-control" id="comentarios" rows="3" placeholder="Escribe cualquier detalle adicional"></textarea>
+        </div>
+
+        <div class="text-center">
+          <button type="button" class="btn btn-success btn-lg" onclick="enviarWhatsapp()">
+            <i class="bi bi-whatsapp me-2"></i>Enviar por WhatsApp
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p class="mb-1">© 2025 Viajale. Todos los derechos reservados.</p>
+      <small>
+        Contacto: 
+        <a href="mailto:contacto@viajale.com" target="_blank" rel="noopener noreferrer">contacto@viajale.com</a> | 
+        Tel: +52 56 5005 3083
+      </small>
+    </div>
+  </footer>
+
+  <script>
+    function enviarWhatsapp() {
+      const cupo = document.querySelector('input[name="cupo"]:checked')?.value || '';
+      const salida = document.getElementById("salida").value.trim();
+      const fechaSalida = document.getElementById("fechaSalida").value;
+      const horaSalida = document.getElementById("horaSalida").value;
+      const destino = document.getElementById("destino").value.trim();
+      const itinerario = document.getElementById("itinerario").value.trim();
+      const fechaRegreso = document.getElementById("fechaRegreso").value;
+      const horaRegreso = document.getElementById("horaRegreso").value;
+      const lugarRegreso = document.getElementById("lugarRegreso").value.trim();
+      const comentarios = document.getElementById("comentarios").value.trim();
+
+      if (!cupo || !salida || !fechaSalida || !horaSalida || !destino) {
+        alert("Por favor, completa todos los campos obligatorios.");
+        return;
+      }
+
+      const mensaje = `Hola, quiero cotizar una camioneta:
+- Tamaño: ${cupo}
+- Lugar de salida: ${salida}
+- Fecha y hora de salida: ${fechaSalida} ${horaSalida}
+- Destino: ${destino}
+- Itinerario: ${itinerario || 'N/A'}
+- Fecha y hora de regreso: ${fechaRegreso || 'N/A'} ${horaRegreso || 'N/A'}
+- Lugar de regreso: ${lugarRegreso || 'N/A'}
+- Comentarios: ${comentarios || 'N/A'}`;
+
+      const url = `https://wa.me/5215562533167?text=${encodeURIComponent(mensaje)}`;
+      window.open(url, "_blank");
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

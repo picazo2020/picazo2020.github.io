@@ -1,0 +1,35 @@
+.fade-in {
+  opacity: 0;
+  animation: fadeIn ease 1.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.cotiza-subtitulo {
+  font-size: 3rem;
+  opacity: 0;
+  transform: scale(1.4);
+  animation: aparecerSubtitulo 1s ease-out forwards;
+}
+
+@keyframes aparecerSubtitulo {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .cotiza-subtitulo {
+    font-size: 2rem;
+  }
+}

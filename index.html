@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajale MX</title>
+    <link rel="icon" type="image/png" href="IconoViajale.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<link rel="stylesheet" href="stily.css">
+
+
+</head>
+
+<header class="p-3 text-bg-dark">
+    <div class="container">
+         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"> 
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"> 
+                <img src="Log Viajale.png" class="bi me-2" width="200" height="50" role="img" aria-label="Bootstrap">
+                    <use xlink:href="#bootstrap"></use></img> </a> 
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"> 
+                    <li><a href="index.html" class="nav-link px-2 text-secondary">Home</a></li> 
+                    <li><a href="rentacamioneta.html" class="nav-link px-2 text-white">Renta de Camioneta</a></li> 
+                    <li><a href="excursiones.html" class="nav-link px-2 text-white">Excursiones</a></li> 
+                    <li><a href="Reservar.html" class="nav-link px-2 text-white">Reservas</a></li> <li>
+                <a href="#" class="nav-link px-2 text-white">Ayuda</a></li> 
+                    </ul>  
+                 </div> </div> </header>
+<body>
+    <div class="container py-3 ">
+
+        <!-- Carrusel Bootstrap -->
+        <style>
+  .carousel-caption.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.6); /* fondo negro semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+  }
+
+  .carousel-caption.bg-overlay h1,
+  .carousel-caption.bg-overlay p {
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+  }
+</style>
+
+<div id="myCarousel" class="carousel slide mb-4 fade-in" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="Imagen1.png" class="d-block w-100" alt="Primera imagen del carrusel" style="height: 500px; object-fit: cover;">
+      <div class="container">
+        <div class="carousel-caption text-start bg-overlay">
+          <h1>Viajes seguros y cómodos</h1>
+          <p>Renta de camionetas para excursiones familiares, viajes de empresa o eventos especiales.</p>
+          <p><a class="btn btn-success" href="#formulario">Cotiza tu viaje</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="Imagen3.png" class="d-block w-100" alt="Segunda imagen del carrusel" style="height: 500px; object-fit: cover;">
+      <div class="container">
+        <div class="carousel-caption text-center bg-overlay">
+          <h1>Confort y espacio garantizados</h1>
+          <p>Camionetas con capacidad para 14 y 20 pasajeros, perfectas para cualquier tipo de salida.</p>
+          <p><a class="btn btn-success" href="#formulario">Reserva ahora</a></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="Imagen2.png" class="d-block w-100" alt="Tercera imagen del carrusel" style="height: 500px; object-fit: cover;">
+      <div class="container">
+        <div class="carousel-caption text-end bg-overlay">
+          <h1>Servicio puntual y profesional</h1>
+          <p>Conductores capacitados y atención personalizada para tu tranquilidad.</p>
+          <p><a class="btn btn-success" href="#formulario">Más información</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Anterior</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Siguiente</span>
+  </button>
+</div>
+ 
+<!-- Contenedor centrado con animación -->
+<div class="container text-center my-4 fade-in">
+  <a href="https://wa.me/5650053083" target="_blank" class="d-inline-block">
+    <img src="WhatsApp.png" class="img-fluid rounded-circle mb-3" width="120" height="120" alt="WhatsApp">
+  </a>
+  <h1 class="fw-bold text-dark">Viaja seguro con nosotros</h1>
+</div>
+
+<!-- Imagen de la camioneta centrada -->
+<div class="container text-center mb-5">
+  <img src="Camioneta.png" class="img-fluid rounded shadow camioneta-img" alt="Camioneta">
+</div>
+
+        <!-- Subtítulo -->
+<h2 class="cotiza-subtitulo text-center text-success fw-bold mb-4">Cotiza tu viaje</h2>
+
+        
+        <div class="container">
+<!-- Formulario dentro de un contenedor estilizado -->
+<div class="container d-flex justify-content-center align-items-center min-vh-100 bg-light">
+  <div class="card shadow p-4 w-100" style="max-width: 700px; background-color: #fefefe;">
+    <h3 class="mb-4 text-center text-success">Reservación de Viaje</h3>
+
+    <form id="formViaje">
+      <!-- Tamaño o cupo -->
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Tamaño o cupo:</label><br>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="cupo" id="cupo14" value="14 pasajeros" required>
+          <label class="form-check-label" for="cupo14">14 pasajeros</label>
+        </div>
+        <div class="form-check form-check-inline">
+          <input class="form-check-input" type="radio" name="cupo" id="cupo20" value="20 pasajeros">
+          <label class="form-check-label" for="cupo20">20 pasajeros</label>
+        </div>
+      </div>
+
+      <!-- Lugar de salida y camioneta -->
+      <div class="mb-3">
+        <label for="salida" class="form-label fw-semibold">Lugar de salida o recolección</label>
+        <input type="text" class="form-control" id="salida" required placeholder="Ejemplo: Ciudad de México">
+      </div>
+      <!-- Fecha y hora -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="fecha" class="form-label fw-semibold">Fecha</label>
+          <input type="date" class="form-control" id="fecha" required>
+        </div>
+        <div class="col-md-6">
+          <label for="hora" class="form-label fw-semibold">Hora</label>
+          <input type="time" class="form-control" id="hora" required>
+        </div>
+      </div>
+
+      <!-- Lugar de destino -->
+      <p class="fw-bold mt-4">Lugar de destino</p>
+
+      <div class="mb-3">
+        <label for="destino" class="form-label fw-semibold">¿A dónde viajas?</label>
+        <input type="text" class="form-control" id="destino" placeholder="Ejemplo: Polanco" required >
+      </div>
+
+      <div class="mb-3">
+        <label for="itinerario" class="form-label fw-semibold">Itinerario (si tienen)</label>
+        <textarea class="form-control" id="itinerario" rows="2"></textarea>
+      </div>
+
+      <!-- Regreso -->
+      <div class="row mb-3">
+        <div class="col-md-6">
+          <label for="fechaRegreso" class="form-label fw-semibold">Fecha de regreso</label>
+          <input type="date" class="form-control" id="fechaRegreso">
+        </div>
+        <div class="col-md-6">
+          <label for="horaRegreso" class="form-label fw-semibold">Hora de regreso</label>
+          <input type="time" class="form-control" id="horaRegreso">
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <label for="lugarRegreso" class="form-label fw-semibold">Lugar de regreso</label>
+        <input type="text" class="form-control" id="lugarRegreso" placeholder="Ejemplo: Mexico" >
+      </div>
+
+      <!-- Comentarios -->
+      <div class="mb-3">
+        <label for="comentarios" class="form-label fw-semibold">Comentarios</label>
+        <textarea class="form-control" id="comentarios" rows="3" placeholder="Opcional"></textarea>
+      </div>
+
+      <!-- Botón -->
+      <button type="submit" class="btn btn-success w-100 fw-bold">Enviar por WhatsApp</button>
+    </form>
+  </div>
+</div>
+
+<!-- WhatsApp JS -->
+<script>
+  document.getElementById('formViaje').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const cupo = document.querySelector('input[name="cupo"]:checked')?.value || '';
+    const salida = document.getElementById('salida').value.trim();
+    const fecha = document.getElementById('fecha').value;
+    const hora = document.getElementById('hora').value;
+    const destino = document.getElementById('destino').value.trim();
+    const itinerario = document.getElementById('itinerario').value.trim();
+    const fechaRegreso = document.getElementById('fechaRegreso').value;
+    const horaRegreso = document.getElementById('horaRegreso').value;
+    const lugarRegreso = document.getElementById('lugarRegreso').value.trim();
+    const comentarios = document.getElementById('comentarios').value.trim();
+
+    let mensaje = `🚐 *Solicitud de Camioneta* 🚐%0A`;
+    mensaje += `*Tamaño o cupo:* ${cupo}%0A`;
+    mensaje += `*Lugar de salida:* ${salida}%0A`;
+    mensaje += `*Lugar donde necesitas la camioneta:* ${lugarCamioneta}%0A`;
+    mensaje += `*Fecha y hora:* ${fecha} ${hora}%0A`;
+    mensaje += `*Lugar de destino:* ${destino}%0A`;
+    if (itinerario) mensaje += `*Itinerario:* ${itinerario}%0A`;
+    if (fechaRegreso) mensaje += `*Fecha regreso:* ${fechaRegreso}%0A`;
+    if (horaRegreso) mensaje += `*Hora regreso:* ${horaRegreso}%0A`;
+    if (lugarRegreso) mensaje += `*Lugar regreso:* ${lugarRegreso}%0A`;
+    if (comentarios) mensaje += `*Comentarios:* ${comentarios}%0A`;
+
+    const telefono = '5211234567890'; // Cambia por tu número real
+    const url = `https://wa.me/5215562533167?text=${encodeURIComponent(mensaje)}`;
+    window.open(url, '_blank');
+  });
+</script>
+
+        </div>
+
+        <section class="py-5 bg-light text-center">
+  <div class="container">
+    <h2 class="mb-4">¿Por qué elegirnos?</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <i class="bi bi-check2-circle fs-1 text-success"></i>
+        <h5>Conductores certificados</h5>
+        <p>Profesionales con experiencia para tu seguridad y tranquilidad.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-clock-history fs-1 text-primary"></i>
+        <h5>Puntualidad garantizada</h5>
+        <p>Llegamos a tiempo, siempre.</p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-people-fill fs-1 text-danger"></i>
+        <h5>Comodidad y espacio</h5>
+        <p>Camionetas modernas con espacio para todo tu grupo.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="py-5 bg-white text-center">
+  <div class="container">
+    <h2 class="mb-4">Opiniones de nuestros clientes</h2>
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <blockquote class="blockquote">
+          <p>“El servicio fue excelente, muy puntuales y amables. Repetiría sin dudarlo.”</p>
+          <footer class="blockquote-footer">María López, CDMX</footer>
+        </blockquote>
+      </div>
+    </div>
+  </div>
+</section>
+<a href="https://wa.me/525650053083" target="_blank" class="rounded-circle position-fixed" style="bottom: 20px; right: 20px; z-index: 1000;">
+  <img src="WhatsApp.png" width="120" height="120" style="border: none;">
+</a>
+
+
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#answer1">
+            ¿Puedo reservar con anticipación?
+          </button>
+        </h2>
+        <div id="answer1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Sí, puedes reservar tu camioneta hasta con 6 meses de anticipación.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#answer2">
+            ¿El precio incluye conductor?
+          </button>
+        </h2>
+        <div id="answer2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">Sí, todos nuestros servicios incluyen conductor certificado.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white py-4 text-center">
+  <div class="container">
+    <p>&copy; 2025 Viajale. Todos los derechos reservados.</p>
+    <p><a href="mailto:contacto@viajale.com" class="text-white">contacto@viajale.com</a> | Tel: +52 5650053083</p>
+  </div>
+</footer>
+
+
+</script>
+
+        
+        
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    </div>
+</body>
+</html>
