@@ -43,12 +43,9 @@
 
 
 
-        <!-- Subtítulo -->
-<h2 class="cotiza-subtitulo text-center text-success fw-bold mb-4">Cotiza tu viaje</h2>
+<!-- Título -->
+<h2 class="text-center text-success fw-bold mb-4">Cotiza tu viaje</h2>
 
-        
-        <div class="container">
-<!-- Formulario dentro de un contenedor estilizado -->
 <div class="container d-flex justify-content-center align-items-center min-vh-100 bg-light">
   <div class="card shadow p-4 w-100" style="max-width: 700px; background-color: #fefefe;">
     <h3 class="mb-4 text-center text-success">Reservación de Viaje</h3>
@@ -67,11 +64,12 @@
         </div>
       </div>
 
-      <!-- Lugar de salida y camioneta -->
+      <!-- Lugar de salida -->
       <div class="mb-3">
         <label for="salida" class="form-label fw-semibold">Lugar de salida o recolección</label>
         <input type="text" class="form-control" id="salida" required placeholder="Ejemplo: Ciudad de México">
       </div>
+
       <!-- Fecha y hora -->
       <div class="row mb-3">
         <div class="col-md-6">
@@ -85,11 +83,9 @@
       </div>
 
       <!-- Lugar de destino -->
-      <p class="fw-bold mt-4">Lugar de destino</p>
-
       <div class="mb-3">
         <label for="destino" class="form-label fw-semibold">¿A dónde viajas?</label>
-        <input type="text" class="form-control" id="destino" placeholder="Ejemplo: Polanco" required >
+        <input type="text" class="form-control" id="destino" placeholder="Ejemplo: Polanco" required>
       </div>
 
       <div class="mb-3">
@@ -111,7 +107,7 @@
 
       <div class="mb-3">
         <label for="lugarRegreso" class="form-label fw-semibold">Lugar de regreso</label>
-        <input type="text" class="form-control" id="lugarRegreso" placeholder="Ejemplo: Mexico" >
+        <input type="text" class="form-control" id="lugarRegreso" placeholder="Ejemplo: Mexico">
       </div>
 
       <!-- Comentarios -->
@@ -126,7 +122,7 @@
   </div>
 </div>
 
-<!-- WhatsApp JS -->
+<!-- JavaScript -->
 <script>
   document.getElementById('formViaje').addEventListener('submit', function (e) {
     e.preventDefault();
@@ -142,10 +138,9 @@
     const lugarRegreso = document.getElementById('lugarRegreso').value.trim();
     const comentarios = document.getElementById('comentarios').value.trim();
 
-    let mensaje = `🚐 *Solicitud de Camioneta* 🚐%0A`;
+    let mensaje = `*Solicitud de Camioneta* `;
     mensaje += `*Tamaño o cupo:* ${cupo}%0A`;
     mensaje += `*Lugar de salida:* ${salida}%0A`;
-    mensaje += `*Lugar donde necesitas la camioneta:* ${lugarCamioneta}%0A`;
     mensaje += `*Fecha y hora:* ${fecha} ${hora}%0A`;
     mensaje += `*Lugar de destino:* ${destino}%0A`;
     if (itinerario) mensaje += `*Itinerario:* ${itinerario}%0A`;
@@ -154,11 +149,12 @@
     if (lugarRegreso) mensaje += `*Lugar regreso:* ${lugarRegreso}%0A`;
     if (comentarios) mensaje += `*Comentarios:* ${comentarios}%0A`;
 
-    const telefono = '5211234567890'; // Cambia por tu número real
-    const url = `https://wa.me/5215650053083?text=${encodeURIComponent(mensaje)}`;
+    const telefono = '5215650053083';
+    const url = `https://wa.me/${telefono}?text=${encodeURIComponent(mensaje)}`;
     window.open(url, '_blank');
   });
 </script>
+
 
         </div>
 
